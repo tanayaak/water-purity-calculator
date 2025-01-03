@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Water Purity Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 50px;
+      text-align: center;
+    }
+    input {
+      padding: 10px;
+      margin: 10px;
+      font-size: 16px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    #result {
+      margin-top: 20px;
+      font-weight: bold;
+      color: blue;
+    }
+    .container {
+      max-width: 500px;
+      margin: auto;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <h1>Water Purity Percentage Calculator</h1>
+  <p>Enter the water quality parameters to calculate the purity percentage.</p>
+  <div class="container">
+    <form id="purityForm">
+      <label for="ph">pH (6.5-8.5):</label>
+      <input type="number" id="ph" placeholder="Enter pH" step="0.1" required><br>
+
+      <label for="tds">TDS (mg/L, <500):</label>
+      <input type="number" id="tds" placeholder="Enter TDS" required><br>
+
+      <label for="chloramines">Chloramines (mg/L, <4):</label>
+      <input type="number" id="chloramines" placeholder="Enter Chloramines" required><br>
+
+      <label for="sulphate">Sulphate (mg/L, <250):</label>
+      <input type="number" id="sulphate" placeholder="Enter Sulphate" required><br>
+
+      <label for="conductivity">Electrical Conductivity (µS/cm, <1500):</label>
+      <input type="number" id="conductivity" placeholder="Enter Conductivity" required><br>
+
+      <label for="toc">Total Organic Carbon (mg/L, <2):</label>
+      <input type="number" id="toc" placeholder="Enter TOC" required><br>
+
+      <label for="thms">THMs (µg/L, <80):</label>
+      <input type="number" id="thms" placeholder="Enter THMs" required><br>
+
+      <label for="turbidity">Turbidity (NTU, <1):</label>
+      <input type="number" id="turbidity" placeholder="Enter Turbidity" required><br>
+
+      <button type="submit">Calculate Purity</button>
+    </form>
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

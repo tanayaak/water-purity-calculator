@@ -1,0 +1,15 @@
+# Water Purity Percentage Calculator
+A simple tool to calculate the purity of water based on key quality parameters:
+- pH
+- TDS
+- Chloramines
+- Sulphate
+- Electrical Conductivity
+- Total Organic Carbon
+- THMs
+- Turbidity
+
+## Usage
+1. Enter the values for the parameters.
+2. Click **Calculate Purity** to see the water purity percentage.
+3. Ensure the parameters are within acceptable ranges for optimal purity.
